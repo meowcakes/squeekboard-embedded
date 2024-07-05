@@ -1,0 +1,1192 @@
+squeekboard (1.39.0) experimental; urgency=medium
+
+  [ MoonlightWave-12 ]
+  * Add "debian/control.debian-testing" to work around removed dependencies
+  * CI: Add workaround for dependencies removed from Debian Testing
+  * Document workaround for installing build-dependencies on Debian Testing
+  * Adwaita:dark: Add visual feedback when pressing highlighted buttons
+  * data/style.css: Highlight "wide"-outline
+  * Add border at the bottom of view-changing buttons
+  * Add placeholder-buttons to emoji-layout
+  * Add a button-style for subtle highlighting
+  * Add more scaling-tests
+  * .gitignore: Add "target"-folder
+  * COPYING: Update links to match the current revision of the GPLv3
+  * Change "http://" to "https://"
+  * Change "GPL-3.0+" to "GPL-3.0-or-later"
+  * doc/*: Fix typos and add a few small improvements
+  * Add syntax-highlighting in the documentation
+  * Improve Documentation
+  * Layouts: Remove "show_numbers_from_symbols" where it is not used
+  * Layouts: Use "change-view"-outline for all view-changing buttons
+  * Layouts: Fix styling of "preferences"- and "BackSpace"-buttons
+  * Layouts: Make the "pl_wide"-layout identical to the "pl"-layout
+  * Layouts: Use double-quotes more consistently
+  * it.yaml and it_wide.yaml: Make `show_eschars` behave like on other layouts
+  * Layouts: Fix some small inconsistencies and remove unused outlines
+  * Layouts: Fix indentation
+  * doc/index.md: Fix link
+  * Improve Japanese layout
+  * Add even more scaling-tests
+  * src/state.rs: Add comments related to shape-selection
+  * doc/layouts.md: Mention the expected aspect-ratios for layouts
+  * ci: Fix typo to actually not install recommended packages in `build_docs`
+  * debian/control: Add `Rules-Requires-Root: no`
+  * Reduce layout-changes when switching views and make layouts more consistent
+  * Increase the height of small buttons on top of the terminal-layouts
+  * ci: Allow failure of the `build_deb`-CI-job
+  * Add an additional view for the accents on the Portuguese (Brazil) layout
+  * Add Turkish [tr] and [tr+f] layouts
+  * Add a Slovenian [si] layout
+  * Improve shape-selection with a workaround
+  * Layouts: Add various small size-improvements and fixes for some layouts
+  * Layouts: Optimise the size of some buttons on some layouts
+  * Reduce the contrast of the border at the bottom of `change-view`-buttons
+  * debian/control.debian-testing: Add `Rules-Requires-Root: no`
+  * Cargo.lock: Update dependencies
+  * Release 1.39.0
+
+  [ Daniel Șerbănescu ]
+  * Update Romanian translation
+
+ -- MoonlightWave-12 <135532-MoonlightWave-12@users.noreply.gitlab.gnome.org>  Sun, 05 May 2024 00:32:42 +0200
+
+squeekboard (1.38.0) experimental; urgency=medium
+
+  [ Arnaud Ferraris ]
+  * Cargo.deps.newer: update for gtk-rs 0.17
+  * src: popover: fix build with newer gtk-rs
+  * src: style: fix build with newer gtk-rs
+  * Cargo.*: use xkbcommon v0.5 for "newer" builds
+
+  [ Peter Michael Green ]
+  * Replace "Continue" with "ControlFlow"
+  * "Priority" constants for glib-rs 0.18
+
+  [ Guido Günther ]
+  * build: Fix typo
+  * ci: Switch to Debian trixie
+  * build: Do away with older and newer deps
+  * packaging: Bump dependencies
+  * packaging: Keep Cargo.lock
+  * cargo: Be more strict with clap
+  * ci: Add features to reference build
+  * Switch to glib v2_58
+  * popover: Ignore return value
+  * drawing: Unwrap errors
+  * test-layout: Drop unneeded `macro use`
+
+  [ MoonlightWave-12 ]
+  * Simplify build-system further
+  * Update dependencies
+  * Change label of "PgUp" and "PgDn", to "Page ↑" and "Page ↓"
+  * data/keyboards/terminal/*.yaml: Update terminal-layouts
+  * Improve German layout
+  * Update Spanish terminal-layout
+  * Translate keys on French terminal-layouts
+  * Clean up layout-files
+  * Add the remaining, wide shapes for layouts
+  * Update to serde_yaml 0.9.*
+  * CI: Install build-dependencies in 'build_reference'-CI-job
+  * CI: Install 'serde-yaml 0.9' from experimental
+  * Update dependencies
+
+  [ Vittorio Monti ]
+  * Update Italian translation
+
+ -- MoonlightWave-12 <135532-MoonlightWave-12@users.noreply.gitlab.gnome.org>  Sat, 23 Mar 2024 17:22:45 +0100
+
+squeekboard (1.24.0) experimental; urgency=medium
+
+  [ MoonlightWave-12 ]
+  * src/popover.c: Change 'ControlCenter' to 'Settings'
+  * Add new emoji-layout
+  * squeekboard.doap: update descriptions and links
+  * Change branch-name from 'master' to 'main'
+  * hacking.md: add more instructions
+
+  [ Guido Günther ]
+  * ci: Stop building byzantium debs
+  * Use newer dependencies everywhere
+  * ci: Drop lintian check
+  * ci: Use Debian trixie for the doc build
+  * ci: Cancel running jobs
+  * ci: Always use noninteractive debconf backend
+
+ -- MoonlightWave-12 <135532-MoonlightWave-12@users.noreply.gitlab.gnome.org>  Sun, 10 Mar 2024 14:44:36 +0100
+
+squeekboard (1.23.0) experimental; urgency=medium
+
+  [ Vasil Pupkin ]
+  * Add Belarusian translation
+
+  [ Pierre Michel Augustin ]
+  * Add Haitian Creole translation
+  * Update Haitian Creole translation
+  * Update Haitian Creole translation
+
+  [ Luciano ]
+  * add french canadian layout (QWERTY + accented letters)
+
+  [ Danial Behzadi ]
+  * Fix Persian layout
+
+  [ uzanto uz ]
+  * Add Spanish terminal-keyboard-layouts
+
+  [ MoonlightWave-12 ]
+  * Improve Spanish terminal-keyboard-layouts
+  * Update links in the documentation
+  * doc/tutorial.md: Remove outdated information about translations
+  * Improve layouts of us-terminal-keyboards
+  * us.yaml and us_wide.yaml: Change outline of 123- and ABC-keys to altline
+  * us.yaml and us_wide.yaml: Change the outline of the period-key
+  * Fix Swiss layouts
+  * Add German terminal-keyboard-layout
+  * data/keyboards/email/us.yaml: fix styling of @-key
+  * data/keyboards/de*.yaml: Change äÄ-label to Ää
+  * data/keyboards/*.yaml: Change "abc" to "ABC"
+  * Add wide emoji-layout
+  * Update dependencies
+
+ -- MoonlightWave-12 <135532-MoonlightWave-12@users.noreply.gitlab.gnome.org>  Fri, 08 Mar 2024 10:46:37 +0100
+
+squeekboard (1.22.0-1) experimental; urgency=medium
+
+  [ Asier Sarasua Garmendia ]
+  * Add Basque translation
+
+  [ Dorota Czaplejewicz ]
+  * state: Make size independent of scaling factor
+  * cleanup: Remove debug prints
+  * tests: Make panel manager modifications pure
+  * panel: Fix sizing on output reconfiguration
+  * Update deps
+
+  [ Undef ]
+  * layout: fix uppercase dvorak terminal mode
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Sat, 01 Apr 2023 13:46:23 +0000
+
+squeekboard (1.21.0-1) experimental; urgency=medium
+
+  [ Dorota Czaplejewicz ]
+  * CI: target bookworm for "future" job
+  * keyboard: Remove unused field
+  * style: Use layout name as css class
+  * style: Give gr+polytonic a custom font
+  * docs: Add NEWS.md
+  * docs: Remove obsolete amber instructions
+  * docs: Update Cargo.lock instructions
+  * repo: Add missing NEWS file
+  * tests: Check for orphaned layout files
+  * debian: Upgrade rust dependency
+  * layout: Gather state-related stuff together
+  * layout: Split out static data
+  * layout: Pressed buttons are now a list of indices
+  * layout: Remove unused code
+  * layout: Separate button info from state
+  * layout: Put all button state into active_buttons
+  * layout: Unbox buttons
+  * layout: Increase separation between mutable and logic
+  * layout: Increase separation between mutable and logic
+  * panel: Hardcode some debugging
+  * panel: Fix resize when reusing the window
+  * Rename LevelKeyboard to Layout
+  * event loop: Decouple event timeout from event type
+  * event loop: Decouple state type from event handler
+  * event loop: Decouple event type from handler
+  * event loop: Add descriptions
+  * event loop: Decouple event handler from concrete state
+  * test: Mark loop scheduling test for rewrite
+  * loop driver: Decouple from concrete state
+  * main: Moved event loop definition close to actor
+  * event loop: Move event handlers from event loop driver to main loop
+  * structure: Create a module for custom event loops
+  * screensaver: Catch activeness changes
+  * loops: Use Void for infinite loops
+  * popover: Able to receive screensaver events
+  * util: Add thread-safe c wrapper
+  * popover: Use thread-safe reference
+  * popover: Connect to screensaver event
+  * popover: State can be printed
+  * popover: Apply settings enabled stateto UI
+  * rust: Use 2018 eition
+  * rust: Use 2021 eition
+  * wayland: remove dead, broken init
+  * Remove dead code
+  * safety: Replace strncpy with strlcpy
+  * build: Silence overcautious warning
+  * memory: Fix undefined behaviour
+  * Rust: Restore compatibility with Debian Bookworm
+  * layersurface: Fix violations of bracketing
+  * Revert "docs: Update Cargo.lock instructions"
+  * Update Cargo.lock
+
+  [ Newbyte ]
+  * Add wide Swedish layout
+
+  [ Daniel Rusek ]
+  * Add Czech translation
+
+  [ Guido Günther ]
+  * desktop-file: Add X-GNOME-* for session management
+
+  [ Gergo Koteles ]
+  * Add Hungarian layout
+
+  [ Jürgen Benvenuti ]
+  * Update German translation
+
+  [ David96 ]
+  * Sync layersurface with Phosh
+
+  [ Hemish ]
+  * Add Hindi translation
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Thu, 16 Feb 2023 15:35:32 +0000
+
+squeekboard (1.20.0-1) experimental; urgency=medium
+
+  [ Dorota Czaplejewicz ]
+  * state: Don't animate when force-hidden
+  * build: Use Cargo.lock included with the repo by default
+  * build: Update Cargo.lock.newer
+
+  [ Darren R ]
+  * added US Dvorak Terminal
+
+  [ Efstathios Iosifidis ]
+  * Add Greek translation
+
+  [ Goran Vidović ]
+  * Add Croatian translation
+
+  [ Sebastian Krzyszkowiak ]
+  * data: Set an icon in the desktop file
+  * data: Indicate that Squeekboard provides haptic feedback
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Sat, 03 Sep 2022 14:21:57 +0000
+
+squeekboard (1.19.0-1) experimental; urgency=medium
+
+  [ Dorota Czaplejewicz ]
+  * docs: Describe layouts
+  * glib: Fix import
+  * state: Record layout choice
+  * doc: Describe how to control debugging mode
+  * state: Include layout choice in visible outcome
+  * state: Store layout override
+  * state: Decide panel arrangement
+  * state: Use dummy layout command
+  * state: Use IM hint and purpose for layout selection
+  * main: Dry-load layout in response to the layout command
+  * state: Become the source of layout choice
+  * cargo: Halt overzealous upgrader
+  * ci: Use bookworm for online builds
+  * build: Generate files before compiling sources
+  * gtk: Persist panel state
+  * build: Update Cargo.lock
+
+  [ Luke Luo ]
+  * Add Chinese (China) translation
+
+  [ Éloi Rivard ]
+  * Add French translation
+
+  [ Laurent Laffont ]
+  * Add FR+Bépo layout
+
+  [ Bytez ]
+  * Fixed missing characters in eschars view in italian layout.
+  * Replaced foreign characters.
+
+  [ Aleksandr Melman ]
+  * Add Russian translation
+
+  [ skysphr ]
+  * Added Georgian layout
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Wed, 06 Jul 2022 06:10:40 +0000
+
+squeekboard (1.18.0-1) experimental; urgency=medium
+
+  [ Hugo Carvalho ]
+  * Add Portuguese translation
+
+  [ Мирослав Николић ]
+  * Add Serbian translation
+
+  [ William Wold ]
+  * Do not reset pending state on zwp_input_method_v2.done
+
+  [ Balázs Úr ]
+  * Add Hungarian translation
+
+  [ Emin Tufan Çetin ]
+  * Add Turkish translation
+
+  [ Piotr Drąg ]
+  * Add Polish translation
+
+  [ Pablo Correa Gómez ]
+  * Add Spanish translation
+
+  [ Vittorio Monti ]
+  * Add Italian translation
+
+  [ Dorota Czaplejewicz ]
+  * build: Replace missing crates.io dependency with Purism-hosted one
+  * ci: Allow failure on sid
+  * build: Update clap on newer Debian
+  * panel: Use scaling to set height
+  * layouts: Add Greek Polytonic
+  * debug: Add dbus interface to control debug prints
+  * output: Store physical size
+  * state: Derive panel size from physical click target size
+  * Clean up size types
+  * state: Add sizing unit test
+  * layouts: Register gr_wide
+  * CI: Build Rust code reference
+  * CI: Add gitlab pages deployment
+  * panel: Split away panel handling
+  * cargo: Add zbus to newer Debian
+  * docs: Update location
+  * docs: Link to reference
+  * docs: Make index more logical
+  * Update Cargo lock
+
+  [ Sotiris Papadopoulos ]
+  * Update gr.yaml to take advantage of more space per symbol. Creation of a wide variant...
+
+  [ Arnaud Ferraris ]
+  * state: fix "wide mode" detection in portrait orientation
+  * layout: allow stretching the layout by a small amount
+  * layout: fix build on i386
+
+  [ Sungjoon Moon ]
+  * Add Korean translation
+
+  [ Quentin PAGÈS ]
+  * Add Occitan translation
+
+  [ Zurab Kargareteli ]
+  * Add Georgian translation
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Mon, 25 Apr 2022 13:12:36 +0000
+
+squeekboard (1.17.0-1) experimental; urgency=medium
+
+  [ Dorota Czaplejewicz ]
+  * docs: Detail the release process better
+  * cleanup: Remove unused header lines
+  * docstrings: Clarify the purpose of Receiver
+  * wayland: Move initialization to the Rust side
+  * ffi: Remove unnecessary pointers to InputMethod
+  * outputs: Clean up for more Rust usage
+  * outputs: Notify the state manager about changes
+  * outputs: Handle removal
+  * Save outputs state
+  * Store preferred output
+  * deps: Vendor assert_matches
+  * Carry output information on visible command all the way to C
+  * Don't reach for globals to choose output
+  * visibility: Forward panel height information to window creation
+  * outputs: Remove ui manager
+  * output: Use new source of panel height information
+  * panel: Apply a hard limit of 1/2 height
+  * cargo: Update lockfile
+
+  [ Cosmin Humeniuc ]
+  * Add Romanian layout
+
+  [ Sam Hewitt ]
+  * data: Update stylesheet with upstream design
+
+  [ Tor ]
+  * Make compatible with latest cargo deps
+
+  [ Luís Fernando Stürmer da Rosa ]
+  * Update Brazilian Portuguese translation
+
+  [ Fran Dieguez ]
+  * Add Galician translation
+
+  [ William Wold ]
+  * Check if dbus handler is null before using
+
+  [ Yosef Or Boczko ]
+  * Add Hebrew translation
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Tue, 25 Jan 2022 11:24:04 +0000
+
+squeekboard (1.16.0-1) experimental; urgency=medium
+
+  [ Dorota Czaplejewicz ]
+  * build: Remove regex crate
+  * ci: Use bookworm image
+  * build: Pin transitive dependencies
+  * cargo: Update Cargo.lock with pinned dependencies
+  * CI: Use byzantium as the base
+  * cargo: Bump dependencies
+
+  [ Guido Günther ]
+  * po: Fix ui file name
+  * entry: Mark as executable
+  * entry: Only activate purpose timer when focused
+  * entry: Add another input hint
+  * Add entry test using GTK4
+
+  [ Rafael Fontenelle ]
+  * Add Brazilian Portuguese translation
+
+  [ Yuri Chornoivan ]
+  * Add Ukrainian translation
+
+  [ Luna Jernberg ]
+  * Add Swedish Translation
+  * Update sv.po
+  * Update LINGUAS
+
+  [ Fabio Tomat ]
+  * Add Friulian translation
+
+  [ Daniel Șerbănescu ]
+  * Add Romanian translation
+
+  [ Matej Urbančič ]
+  * Add Slovenian translation
+
+  [ Nathan Follens ]
+  * Add Dutch translation
+
+  [ Jiri Grönroos ]
+  * Add Finnish translation
+
+  [ Danial Behzadi ]
+  * Add Persian translation
+
+  [ Jordi Mas i Hernandez ]
+  * Add Catalan translation
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Tue, 25 Jan 2022 11:24:04 +0000
+
+squeekboard (1.15.0-1) experimental; urgency=medium
+
+  [ Khaled Eldoheiri ]
+  * Introduce Arabic keyboard layout
+
+  [ Dorota Czaplejewicz ]
+  * Docs: Release procedure
+  * build: Fix "any" dependency versioning
+  * readme: Mention the layout guide
+  * dbus: Hint that maybe squeekboard is running
+  * readme: Change self-reference to repo to gnome
+  * docs: Move env vars section to debugging
+  * readme: Clarify basic running steps
+  * readme: Put emphasis on being an input method
+  * readme: Update features
+  * ci: Use cached artifacts in the test
+  * ci: Move release test to the start
+  * ci: Start lintian test right after deb build
+  * ci: Add git revision and CI pipeline number to .deb artifacts
+  * ci: Use bookworm image
+  * ci: Reformat yaml file
+  * ci: Include pre-build style check
+  * popover: Fix reentrancy problem
+  * submission: Wrap the structure in a safe wrapper
+  * util: Add ArcWrapped
+  * animation: Prototype a way of handling state and applying it separately
+  * state: Connect the animation state machine to the rest
+  * event_loop: Separate and use for physical keyboard presence
+  * Revert "util: Add ArcWrapped"
+  * Revert "ci: Use bookworm image"
+  * ci: Fix formatting
+  * ci: Make indentation close to original again
+  * cargo: version bump
+
+  [ Jordi ]
+  * Introduce Swiss French keyboard layout
+  * improve accents layout behavior and code cleaning
+
+  [ Plamen Stoev ]
+  * Rename bg to bg+phonetic
+  * Add 'bg' layout
+  * Translate more layout names in Bulgarian
+
+  [ William Wold ]
+  * Show error when Layer Shell is not supported
+  * Update entry.py file path in readme
+  * Update zwp_text_input_v3 (comment changes only)
+  * Update zwp_input_method_v2
+
+  [ Patrick Jörg ]
+  * Introduce Swiss German keyboard layout
+  * Introducing ch+de layout and modified ch.yaml fallback
+  * Added ch_wide
+
+  [ ZenWalker ]
+  * layersurface: avoid duplicate assignment
+
+  [ T. Zack Crawford ]
+  * Update tutorial.md to clarify steps in creating a custom layout
+
+  [ Guido Günther ]
+  * gitlab-ci: Adjust CI tags
+  * gitlab-ci: Drop build for outdated distributions
+  * data: Fix build with meson 0.60.0
+  * main: Remove trailing whitespace
+  * main: Honor --help and -h
+  * eek-renderer: Add log domain
+  * eek-renderer: Fix indentation
+  * eek-renderer: Honor theme changes (Closes: #296)
+  * main: Drop broken support G_BUS_TYPE_SYSTEM
+  * main: Avoid two error variables in the same function
+  * main: Use dark theme when run in a Phosh session (Closes: #242)
+  * gtk-keyboard: Don't set variable to NULL twice in a row
+  * renderer: Use `g_debug ()`
+  * main: Add debug flag to always show squeekboard on start
+  * renderer: Disconnect theme change signal handler
+  * main: Add debug flag to show GTK inspector
+  * README: Document SQUEEKBOARD_DEBUG environment variable
+  * Move style-check to separate script
+  * Honor input-purpose PIN
+  * entry: Use a scrolled window
+  * entry: Set a margin on the grids
+  * entry: Add a random text entry field
+  * imservice: Invoke eekboard_context_service_set_hint_purpose unconditionally
+    (Closes: #311)
+  * langs: Don't use empty translation file (Closes: #313)
+  * Initialize gettext
+  * Reuse the unused popover ui file for i18n (Closes: #315)
+  * po: Add German translation
+  * gresources: Drop popup.ui
+  * Revert "gresources: Drop popup.ui"
+  * gitlab-ci: Add PKG_ONLY
+  * layout: Drop trailing whitespace
+  * Use special pin keyboard
+  * layout: Keep content purpose around
+  * renderer: Set style class based on input purpose
+  * pin: Use less margin
+  * debian: Install translations
+  * debian: Switch to dh 13
+  * debian: Install desktop file
+  * eekboard-context-service: Don't translate property names
+  * server-context-servide: Don't translate application name
+  * data: Make generic name truly generic
+  * po: Add desktop file to translatable files
+  * Add URL and EMail keyboard variants for us (Closes: #65)
+  * gitignore: Drop zanata dir
+  * gitignore: Ignore generated po files
+  * popover: Move Emoji and Terminal to ui file
+  * popover: Add translator notes
+  * popover: Make the ui file match the code file name
+  * Remove emoji and terminal from translations
+  * popover: Don't complain about missing translations
+  * Drop custom translation handling
+  * Drop locale_config
+  * Remove custom translations
+
+  [ PhilProg ]
+  * Add documentation about compositors
+
+  [ Norayr Chilingarian ]
+  * armenian typewriter and phonetic keyboards.
+  * armenian layout also added to meson.build etc.
+
+  [ Arnaud Ferraris ]
+  * resources: add wide FR terminal keyboard
+
+  [ Sebastian Krzyszkowiak ]
+  * renderer: Take context scale into account when drawing icons (Closes: #139)
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Sun, 19 Dec 2021 14:11:06 +0000
+
+squeekboard (1.14.0pureos0~amber0) amber-phone; urgency=medium
+
+  [ Dorota Czaplejewicz ]
+  * data: Split into loading and parsing
+  * layout: Remove unused code
+  * build: Fix unnecessary shell quotes
+  * popover: Allow spanning outside panel area
+  * cargo: Update dependencies before release
+
+  [ undef ]
+  * Fix typos jp keyboard comments
+
+  [ anteater ]
+  * use the correct GtkStyleProviderPriority to indicate that the styles are provided by the application
+  * remove some unnecessary unsafe code
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Sat, 15 May 2021 12:45:20 +0000
+
+squeekboard (1.13.0pureos0~amber0) amber-phone; urgency=medium
+
+  [ Dorota Czaplejewicz ]
+  * layout: Latch keys when clicked twice
+  * layout: Add stateless view switching
+  * layout: Plug in stateless view switching
+  * layout: Remove the little abomination of view change promise
+  * view: Ąto-unlatching when multiple latching buttons pressed
+  * renderer: Bring button drawing closer to Rust
+  * ffi: Eliminate squeek_button and squeek_row
+  * imservice: Increment serials on receiving done, not sending commit
+  * input-method: Fix commit/done mixup in protocol text
+  * CI: fix xheck_tag to be compatible with Amber
+  * italian: Fix colon
+  * popover: Fix prematurely deallocated CString
+  * Rust: Remove unnecessary no_mangle statements to silence warnings
+  * renderer: Reduce reliance on knowing the transform
+  * renderer: Split mutable geometry and place it directly in GtkKeyboard
+  * Revert "moved data/langs/he_IL.txt -> data/langs/he-IL.txt to better conform with existing translations."
+  * layout: Make it possible to opt out of latching per-key
+  * renderer: Mark latched buttons differently than locked
+  * appearance: Colour latched/locked according to design
+  * docs: Describe view switching
+  * language-terminal: Place keyboards in a sub-path
+  * layout selection: Fix emoji and number
+  * rust: Fix compiler warnings
+  * layout: Take into account text purpose again
+  * layouts: Make selection testable
+  * layouts: Stop assuming that layout name always changes on switch
+  * Cargo: Version bump
+
+  [ J.D. Laub ]
+  * Add US Dvorak layout (and Colemak wide)
+  *     Add US Dvorak layout (and Colemak wide)
+
+  [ Jordi Masip ]
+  * Catalan keyboard layout
+
+  [ Myth ]
+  * Added hebrew keyboard layout
+
+  [ David96 ]
+  * Add Mod4 (Windows) key
+
+  [ Panawat Wong-klaew ]
+  * Add wide Thai keyboard layout
+
+  [ Guido Günther ]
+  * server-main: Add quit()
+  * server-main: Properly register to gnome-session (Closes: #274)
+
+  [ Kozova1 ]
+  * Added Hebrew translations for most layouts.
+  * moved data/langs/he_IL.txt -> data/langs/he-IL.txt to better conform with existing translations.
+  * Fixed Hebrew layout.
+  * moved data/langs/he_IL.txt -> data/langs/he-IL.txt to better conform with existing translations.
+
+  [ M33 ]
+  * Revert "Update tests/meson.build"
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Mon, 12 Apr 2021 10:40:32 +0000
+
+squeekboard (1.12.0pureos0~amber0) amber-phone; urgency=medium
+
+  [ Dorota Czaplejewicz ]
+  * docs: Correct Cargo update instructions
+  * visibility: Centralize keyboard panel visibility policy and handling
+  * build: Fix release
+  * tests: Prefer the env var for finding test layouts
+  * tests: Explicitly pass source directory to tests
+  * debian: Build reproducibly
+  * tests: Allow legacy mode to have much longer tests.
+  * build: Enable unused warnings in C
+  * build: Enable wformat to remove warnings about missing wformat
+  * build: Fail on any C warnings when strict
+  * data: Made data flow in fallback clearer
+  * data: Flattened layout fallback function
+  * layouts: Use base as fallback for alternative layouts
+  * layouts: Simplify the main flow of source list
+  * tests: Add some description to the list of tested layouts
+  * layout_names: Unmess the list of builtin layouts
+  * dbus: Reset hints if text input missing
+  * visibility: Stop calling GTK functions from the visibility manager
+
+  [ Wannaphong Phatthiyaphaibun ]
+  * Add thai keyboard
+  * Update resources.rs
+  * Update meson.build
+  * escape " on thai keyboard
+
+  [ clonex10100 ]
+  * Added US Colemak Keyboard Layout
+
+  [ Henry-Nicolas Tourneur ]
+  * d/rules: fix an FTBFS on mips64el with GOT > 64kb
+  * d/rules: export RUSTFLAGS only on architecture that needs it
+  * d/rules: export RUSTFLAGS only on architecture that needs it
+
+  [ Jiří Stránský ]
+  * Add Czech keyboard layouts
+
+  [ Stefan Grotz ]
+  * Esperanto keyboard
+
+  [ Vladimir ]
+  * Bulgarian language keyboard layout
+
+  [ Vladimir Stoilov ]
+  * bulgarian add translation and to needed lists
+  * Fix bulgarian layout size
+
+  [ Andreas Rönnquist ]
+  * no: Use wide button switching between numbers, symbols and base
+
+  [ jranaraki ]
+  * Farsi/Persian keyboard layout
+  * Farsi/Persian keyboard layout
+  * Added requirements to resources.rs and meson.build
+  * Updated the layout to provide more convenient and faster typing experience
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Sun, 10 Jan 2021 09:43:42 +0000
+
+squeekboard (1.11.1) amber-phone; urgency=medium
+
+  [ Mark Müller ]
+  * keyboard: Fix semicolon in German layout
+  * keyboard: Move semicolon in German layout to numbers view replacing redundant comma key
+
+  [ Dorota Czaplejewicz ]
+  * imservice: Set up UI according to current needs when it shows up
+  * UI: Keep visibility factors in a central place
+  * cargo: Update deps
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Sat, 21 Nov 2020 11:08:06 +0000
+
+squeekboard (1.11.0) amber-phone; urgency=medium
+
+  [ Dorota Czaplejewicz ]
+  * UI: Delay hiding only when leaving a text field
+  * ui: Cancel hiding delay when activity requested again
+  * Update dependencies
+
+  [ Fabio Tomat ]
+  * Update fur-IT.txt fix typo for Spanish
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Sat, 14 Nov 2020 06:46:28 +0000
+
+squeekboard (1.10.0) amber-phone; urgency=medium
+
+  [ Dorota Czaplejewicz ]
+  * virtual_keyboard: Fix desynced modifiers state
+  * rust: Fix deprecation warnings
+  * docs: Tutorial syntax cleanups
+  * docs: Reorganize tutorial
+  * build: Error on repeating declarations
+  * keymap: Generate from symbol map, not layout
+  * data: Restore testability of action->keysym conversion
+  * syntax: Let older rustc understand symbolmap's lifetime
+  * debian: Insert a "breaks" for librem5-base < 24
+  * keymap: Keep keymap fd management in one place
+  * vkeyboard: Use a generic slice instead of a vector
+  * tests: Check for missing return in builtin layouts except emoji
+  * keymap: Concentrate special handling of BackSpace, which is implicit in Erase action
+  * keymaps: Use multiple key maps, each within the limit of what Xorg can accept.
+  * build: Avoid MaybeUninit on older Debian
+  * tests: Fix bad field access
+  * cargo: Update dependencies
+
+  [ Guido Günther ]
+  * eekboard-context-service: Return early if schema is unavailable
+  * treewide: Use new style function definitions
+  * build: Enable '-Wold-style-definition' '-Wstrict-prototypes'
+  * build: Enable '-Wunused-function'
+  * eekboard-context-service: Drop EEKBOARD_CONTEXT_SERVICE_GET_PRIVATE
+  * keyboard: Fix warning
+  * layout: Fix warning
+  * gitlab-ci: Enable --Werror
+  * eek-keyboard: Don't ignore return value
+  * build: Enable -Winit-self
+  * build: Enable -Wformat-security
+  * build: Enable -Wmaybe-uninitialized
+  * treewide: Drop redundant declarations
+  * build: Enable -Wredundant-declarations
+  * ServerContextService: Drop GObject boilerplate
+  * build: Enable '-Wformat-nonliteral'
+  * eekboad-context-service: Drop signal class handler
+  * eekboard-context-service: Drop docstrings for inexistent functions
+  * eekboard-context-service: Drop the GObject boilerplate
+  * eekboard-context-service: Drop private struct
+  * server-context-service: Consistenty name self argument 'self'
+  * server-context-service: swap signal arguments
+  * server-context-service: Don't show keyboard when disabled (Closes: #222)
+
+  [ Nazarii Kretovych ]
+  * Add Ukrainian keyboard layout.
+
+  [ Benjamin Schaaf ]
+  * Fix spelling mistakes in doc/hacking.md
+  * Expand the development documentation in the readme
+  * Expand key press detection to the edges of the view's bounding box
+  * Sort layouts by type before sorting by name
+  * Fix leak in level_keyboard_new
+  * Fix leak endlessly adding a resource path to the default theme
+  * Add settings option to popover
+
+  [ Al ]
+  * proposal for belgian layout (copy of fr)
+  * alphabetical order for src/resources.rs tests/meson.build
+
+  [ Arnaud Ferraris ]
+  * eek-gtk-keyboard: use virtual resolution to check arrangement kind
+  * server-context-service: optimize height calculation
+  * keyboards: add wide French layout
+  * keyboards: add wide Belgian layout
+  * keyboards: add wide terminal layout
+
+  [ Fabio Tomat ]
+  * Revert "Add friulian keyboard"
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Mon, 19 Oct 2020 14:07:01 +0000
+
+squeekboard (1.9.3) amber-phone; urgency=medium
+
+  [ Björn Tantau ]
+  * Show more useful keys at the same time.
+  * Add Ctrl and Alt modifier keys.
+  * Add missing Ê key.
+  * Make f-keys slightly wider.
+  * Add Menu key.
+
+  [ Guido Günther ]
+  * d/rules: Only remove Cargo.lock if it exists
+  * eek: Drop libcanberra usage
+  * debian: Build-depend on libfeedback
+  * eek-gtk-keyboard: Trigger event feedback on button press (Closes: #166)
+
+  [ Dorota Czaplejewicz ]
+  * build: Add missing gio-unix dependency
+  * build: Make compatible with Debian Bullseye
+  * debian: Add amber to legacy distro list
+  * ci: Add amber job
+  * debian: Require lsb-release
+  * size: Hardcode size to work around screen rotation
+  * ci: Re-add x64 Buster build
+  * italian: Fix space and period
+
+  [ Sebastian Krzyszkowiak ]
+  * Revert "Merge branch 'btantau-master-patch-76686' into 'master'"
+  * Terminal layout: another approach
+
+  [ Luís Fernando Stürmer da Rosa ]
+  * Brazilian Portuguese Keyboard Layout.
+
+ -- Sebastian Krzyszkowiak <sebastian.krzyszkowiak@puri.sm>  Wed, 05 Aug 2020 16:16:08 +0200
+
+squeekboard (1.9.2) amber-phone; urgency=medium
+
+  [ Dorota Czaplejewicz ]
+  * keyboard: Remove unused code
+  * gsettings: Don't crash when unavailable
+  * dbus: Don't crash if can't make a connection
+  * gsettings: Don't crash on switching when unavailable
+  * layout: Split out choice to a struct on its own
+  * renderer: Simplify by dropping gobjectness
+  * levelkeyboard: Rearrange to make future conversion easier
+  * layout: Minor generalizations
+  * Remove unused code
+  * sizing: Create a standalone UI shape manager
+  * sizing: Ignore scaling factor for layout selection
+  * CI: Fix typo
+  * Update rust deps for release
+
+  [ Andreas Rönnquist ]
+  * Swedish keyboard, wide button switching between numbers, symbols and base
+  * More fixes of button sizes
+  * Folder is doc, not docs
+
+  [ uzanto ]
+  * Add new file
+  * Replace duplicated show_symbols by show_eschars and removed "Delete" button that it's doing nothing
+
+  [ Arnaud Ferraris ]
+  * keyboards: fr: fix keyboard layout
+  * keyboards: fr: make sure the layout fits the screen
+  * resources: include French keyboard layout
+  * keyboards: fr: improve consistency with other layouts
+  * keyboards: fr: improve diacritics layout
+  * tests: add french layout
+
+  [ Vlad ]
+  * Fresh Russian layout
+
+  [ Jordi Masip ]
+  * Removed unused dependency 'libcroco'
+
+  [ Florian Klink ]
+  * sm.puri.Squeekboard.desktop: make path to Exec= absolute
+
+  [ Ole Guldberg ]
+  * Danish keyboard layout
+  * Danish keyboard layout
+  * add test for danish layout
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Mon, 01 Jun 2020 09:39:12 +0000
+
+squeekboard (1.9.1) amber-phone; urgency=medium
+
+  [ Dorota Czaplejewicz ]
+  * layout: Improve press handling
+  * settings: Handle empty settings
+  * Variant: Use proper pointer conversion between C and Rust
+  * meta: Add doap file
+  * modifiers: Support Control and Alt
+  * CI: Test that any bump to changelog has a corresponding tag
+  * docs: Add the guiding principle
+  * hacking: Move into docs/
+
+  [ &t ]
+  * Fix minor comment typos
+
+  [ Dorota Czaplejewicz ]
+  * cargo: Bump package versions before release
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Sun, 08 Mar 2020 10:04:29 +0000
+
+squeekboard (1.9.0) amber-phone; urgency=medium
+
+  [ Dorota Czaplejewicz ]
+  * imservice: Add commit_string method
+  * submission: Handle submitting strings
+  * input_method: Use for erasing
+  * logging: Use in merged functions
+  * translations: Remove redundant ones
+  * translations: Translate builtin layouts
+  * greek: Rename to gr which is used by gnome settings
+
+  [ Sebastian Krzyszkowiak ]
+  * layouts: Add Polish layouts
+
+  [ Dorota Czaplejewicz ]
+  * locks: Draw based on current view
+  * locking: Lock keys statelessly
+  * layouts: Better accented uppercase in PL
+  * emoji: Add more choices
+  * row: Eliminate angle
+  * layout: Center views relative to each other and the layout bounds
+  * drawing: Generalized foreach_visible_button
+  * variant: Fix double-free
+  * variant: Fix leak
+  * keyboard_layout: Fix leak
+  * layout: Improve scoping of locked variable
+  * terminal: Make */ easier to reach
+
+  [ Sebastian Krzyszkowiak ]
+  * layouts: terminal: Use altline outline for dot key
+
+  [ Dorota Czaplejewicz ]
+  * text input: Disable erasing
+  * cargo: Update deps
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Wed, 19 Feb 2020 14:32:39 +0000
+
+squeekboard (1.8.1) amber-phone; urgency=medium
+
+  [ Dorota Czaplejewicz ]
+  * action: Rename Level to View
+  * keyboard: Introduce a KeyCode type wrapping u32
+  * layout: Centralize handling key releases
+  * layout: Make handling presses uniform
+  * UI: Drop indirection for show/hide functions
+  * managers: Move visible flag to UI manager
+  * dbus_service: Remove unused function
+  * dbus: Remove unneeded gobjectness
+  * dbus: Rename handler from eekboard_service
+  * context: Moved keymap setting together with its generation
+  * key-emitter: Remove unused
+  * eekboard_context_service: Drop unused enable property
+  * services: Split out layout management from EekboardContextService
+  * submission: Move away from virtual-keyboard
+  * submission: Create a new wrapper over imservice
+  * imservice: Limited scope of unsafe
+  * EekGtkKeyboard: Use a direct reference to EekboardContext
+  * submission: Take over virtual_keyboard handling
+  * keyboard: Cleanups of unused code
+  * levelkeyboard: Drop unused manager references
+  * keyboard: Gather up keymap handling, drop layout
+  * submission: Remove wildcard reexport
+  * imservice: Rename commit_state to done to match protocol
+  * ci: Clean up `..` before it's searched for artifacts
+  * dbus: Log error on dbus exit
+  * logging: Try to improve common operations
+  * imservice: Return something more resembling an Error on failure
+  * logging: Unified to remove random eprint calls
+  * press_key: Use proper logging
+  * number: Fix keysym for Return
+  * build: Strip clap of optional features
+  * layouts: Fix segfault on switching to wide
+  * font: Use font from style context
+  * font: Only pass relevant data to label renderer
+
+  [ Sebastian Krzyszkowiak ]
+  * layout: terminal: Swap positions of preferences and actions button
+  * layout: terminal: Show actions button on all views
+  * layout: terminal: Replace actions button with period on symbols view
+
+  [ Dorota Czaplejewicz ]
+  * setup: Connect ui to the state manager
+  * debian: Add missing commas
+
+  [ David Boddie ]
+  * Tidy build file and docs
+  * Use pip to install recommonmark
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Fri, 31 Jan 2020 09:59:12 +0000
+
+squeekboard (1.8.0) amber-phone; urgency=medium
+
+  [ Dorota Czaplejewicz ]
+  * translations: Use gnome-desktop's xkb info database for layout names
+  * translations: Make the code cleaner
+  * overlay: Add terminal
+  * eek-layout: Remove unused
+  * pre-release: Update deps
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Tue, 14 Jan 2020 13:55:00 +0000
+
+squeekboard (1.7.0) amber-phone; urgency=medium
+
+  * New terminal layout appearing on terminal input hint
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Wed, 08 Jan 2020 11:53:07 +0000
+
+squeekboard (1.7.0) amber-phone; urgency=medium
+
+  * New terminal layout appearing on terminal input hint
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Wed, 08 Jan 2020 11:53:07 +0000
+
+squeekboard (1.6.0) amber-phone; urgency=medium
+
+  [ Dorota Czaplejewicz ]
+  * tools: Move entry.py
+  * build: Move building of squeekboard-test-layout to tools
+  * packaging: Install entty.py as squeekboard-entry
+  * Remove unused build dependencies
+  * Remove unused header generator
+  * logging: Move all facilities to one file
+  * logging: Described the design
+  * logging: Add described log levels
+  * popover: Install emoji layout
+  * popover: Show overlays as selected
+  * Fix old Rust woes
+  * emoji: Add a passable layout
+  * Fix g_ and stdlib allocation/free mismatches
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Thu, 02 Jan 2020 12:02:50 +0000
+ 
+squeekboard (1.5.0) amber-phone; urgency=medium
+
+  [ Dorota Czaplejewicz ]
+  * keycodes: Sort to eliminate runtime indeterminism
+  * switcher: Switch layout on menu item click
+  * Drop squeek_key
+  * renderer: Remove some unneeded vars
+  * renderer: Simplified outline rendering
+  * renderer: Drop row from button rendering
+  * renderer: Drop unused params
+  * renderer: Simplify surface rendering
+  * rendering: Simplify Cairo context usage, remove unneeded calls.
+  * rendering: Remove unneeded redraw after button release
+  * renderer: Remove unused locked key render function
+  * renderer: Simply cut off when painting outside bounds
+  * renderer: Render whole keyboard the same way as pressed buttons
+
+  [ Mark Müller ]
+  * layout: add German wide layout
+
+  [ Dorota Czaplejewicz ]
+  * renderer: Remove unused functions
+  * cleanup: Remove references to squeek_view
+  * cleanup: Unbox View and Row
+  * cleanup: Remove unused single frame draw
+  * positioning: Calculate sizes instead of storing, move position out of widgets
+  * positioning: Clean up unused code
+  * Fix old Rust woes
+
+  [ Mark Müller ]
+  * layout: add Japanese Kana wide layout
+
+  [ Dorota Czaplejewicz ]
+  * Entry test: Add Terminal input purpose
+  * readme: Add note about Cargo dependencies
+  * Create a library/UI module separation
+  * hacking: Add DCO and licensing requirement
+  * Fix internal .md link
+
+  [ Mark Müller ]
+  * squeekboard-test-layout: add argument parsing and some more output
+
+  [ Dorota Czaplejewicz ]
+  * Use clap in the lockfile
+  * parsing: Remove bounds which weren't used anyway
+  * layout: Respect margins
+  * CI: Build arm64 .deb
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Mon, 23 Dec 2019 11:58:57 +0000
+
+squeekboard (1.4.0) amber-phone; urgency=medium
+
+  * "text" property in layouts
+  * Adjusts to user's color scheme
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Mon, 02 Dec 2019 19:37:01 +0000
+
+squeekboard (1.3.2) amber-phone; urgency=medium
+
+  * Make sure all key presses get accepted by the compositor
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Tue, 26 Nov 2019 15:36:27 +0000
+
+squeekboard (1.3.1) amber-phone; urgency=medium
+
+  * Update and fix layouts and languages
+  * Make tests less likely to fail
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Wed, 20 Nov 2019 22:10:48 +0000
+
+squeekboard (1.3.0) amber-phone; urgency=medium
+
+  * Language selection popup
+  * Swedish and Finnish layouts
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Sat, 16 Nov 2019 15:38:14 +0000
+
+squeekboard (1.2.2) amber-phone; urgency=medium
+
+  * Landscape mode
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Wed, 30 Oct 2019 12:38:39 +0000
+
+squeekboard (1.2.1) amber-phone; urgency=medium
+
+  * Use different distribution
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Tue, 08 Oct 2019 10:56:10 +0000
+
+squeekboard (1.2.0) unstable; urgency=medium
+
+  * Use Cargo-based dependencies
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Tue, 24 Sep 2019 10:42:15 +0000
+
+squeekboard (1.1.0) unstable; urgency=medium
+
+  * Use new keyboard layout format
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Mon, 02 Sep 2019 10:12:02 +0000
+
+
+squeekboard (1.0.10) unstable; urgency=medium
+
+  * Use a shared DBus definition
+
+ -- Dorota Czaplejewicz <dorota.czaplejewicz@puri.sm>  Tue, 02 Jul 2019 20:12:02 +0000
+
+squeekboard (1.0.9) unstable; urgency=medium
+
+  * Initial release.
+
+ -- David Boddie <david.boddie@puri.sm>  Tue, 25 Jun 2019 19:33:00 +0200

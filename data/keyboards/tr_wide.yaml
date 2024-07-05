@@ -1,0 +1,157 @@
+---
+outlines:
+    default:            { width: 45.11,  height: 42 }
+    subtle-highlight:   { width: 45.11,  height: 42 }
+    halfwidth:          { width: 24,     height: 42 }
+    narrow:             { width: 40.5,   height: 42 }
+    altline:            { width: 67.67,  height: 42 }
+    change-view:        { width: 67.67,  height: 42 }
+    fill:               { width: 90.22,  height: 42 }
+    subtle-highlight-2: { width: 90.22,  height: 42 }
+    spaceline:          { width: 212.2,  height: 42 }
+    special:            { width: 45.11,  height: 42 }
+    placeholder:        { width: 45.11,  height: 42 }
+
+views:
+    base:
+        - "q w e r t y u ı o p ğ ü"
+        - "a s d f g h j k l ş i --"
+        - "Shift_L   z x c v b n m ö ç BackSpace"
+        - "show_numbers show_eschars preferences         space        ,-narrow .-narrow Return"
+    upper:
+        - "Q W E R T Y U I O P Ğ Ü"
+        - "A S D F G H J K L Ş İ --"
+        - "Shift_L   Z X C V B N M Ö Ç BackSpace"
+        - "show_numbers show_eschars preferences         space        !-narrow ?-narrow Return"
+    numbers:
+        - "1 2 3 4 5 6 7 8 9 0"
+        - "@ # ₺ % & - _ + ( )"
+        - "show_symbols -- ; \" ' : = < > -- BackSpace"
+        - "show_letters show_eschars preferences         space        ,-narrow .-narrow Return"
+    symbols:
+        - "~ ` € | · √ µ ÷ × ¶"
+        - "© ® £ $ ¥ ^ ° * { }"
+        - "show_numbers -- \\ / § π τ [ ] -- BackSpace"
+        - "show_letters show_eschars preferences         space        ,-narrow .-narrow Return"
+    eschars:
+        - "ä æ é ö-subtle-highlight ü-subtle-highlight Ä Æ É Ö-subtle-highlight Ü-subtle-highlight"
+        - "à â ê î ô À Â Ê Î Ô"
+        - "show_numbers -- ğ-subtle-highlight ç-subtle-highlight ş-subtle-highlight Ğ-subtle-highlight Ç-subtle-highlight Ş-subtle-highlight ß -- BackSpace"
+        - "show_letters show_eschars preferences         space        û Û Return"
+
+buttons:
+    Shift_L:
+        action:
+            locking:
+                lock_view: "upper"
+                unlock_view: "base"
+        outline: "change-view"
+        icon: "key-shift"
+    BackSpace:
+        outline: "altline"
+        icon: "edit-clear-symbolic"
+        action: "erase"
+    preferences:
+        action: "show_prefs"
+        outline: "special"
+        icon: "keyboard-mode-symbolic"
+    show_numbers:
+        action:
+            set_view: "numbers"
+        outline: "change-view"
+        label: "123"
+    show_letters:
+        action:
+            set_view: "base"
+        outline: "change-view"
+        label: "ABC"
+    show_symbols:
+        action:
+            set_view: "symbols"
+        outline: "change-view"
+        label: "*/="
+    show_eschars:
+        action:
+            locking:
+                lock_view: "eschars"
+                unlock_view: "base"
+        outline: "change-view"
+        label: "Çğ"
+    space:
+        outline: "spaceline"
+        text: " "
+    Return:
+        outline: "altline"
+        icon: "key-enter"
+        keysym: "Return"
+    û:
+        outline: "narrow"
+    Û:
+        outline: "narrow"
+    ",-narrow":
+        outline: "narrow"
+        text: ","
+    .-narrow:
+        outline: "narrow"
+        text: "."
+    "!-narrow":
+        outline: "narrow"
+        text: "!"
+    ?-narrow:
+        outline: "narrow"
+        text: "?"
+    --:
+        outline: "placeholder"
+        text: ""
+    5:
+        outline: "fill"
+    "&":
+        outline: "fill"
+    ·:
+        outline: "fill"
+    ¥:
+        outline: "fill"
+    ô:
+        outline: "fill"
+    Ä:
+        outline: "fill"
+    À:
+        outline: "fill"
+    √:
+        outline: "fill"
+    6:
+        outline: "fill"
+    -:
+        outline: "fill"
+    ^:
+        outline: "fill"
+    ğ-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "ğ"
+    Ğ-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "Ğ"
+    ü-subtle-highlight:
+        outline: "subtle-highlight-2"
+        text: "ü"
+    Ü-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "Ü"
+    ş-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "ş"
+    Ş-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "Ş"
+    ç-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "ç"
+    Ç-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "Ç"
+    ö-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "ö"
+    Ö-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "Ö"

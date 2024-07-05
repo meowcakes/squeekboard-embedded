@@ -1,0 +1,143 @@
+---
+outlines:
+    default:            { width: 48.87,  height: 42 }
+    subtle-highlight:   { width: 48.87,  height: 42 }
+    halfwidth:          { width: 24,     height: 42 }
+    thin:               { width: 30,     height: 42 }
+    narrow:             { width: 40.5,   height: 42 }
+    altline:            { width: 82.74,  height: 42 }
+    change-view:        { width: 82.74,  height: 42 }
+    fill:               { width: 97.74,  height: 42 }
+    subtle-highlight-2: { width: 97.74,  height: 42 }
+    spaceline:          { width: 159.13, height: 42 }
+    special:            { width: 48.87,  height: 42 }
+    placeholder:        { width: 30,     height: 42 }
+
+views:
+    base:
+        - "q w e r t z u i o p ü"
+        - "a s d f g h j k l ö ä"
+        - "Shift_L   y x c v b n m ß-thin BackSpace"
+        - "show_numbers show_eschars preferences         space        ,-narrow .-narrow Return"
+    upper:
+        - "Q W E R T Z U I O P Ü"
+        - "A S D F G H J K L Ö Ä"
+        - "Shift_L   Y X C V B N M --thin BackSpace"
+        - "show_numbers show_eschars preferences         space        !-narrow ?-narrow Return"
+    numbers:
+        - "1 2 3 4 5 6 7 8 9 0"
+        - "@ # € % & - _ + ( )"
+        - "show_symbols   ; \" ' : = < > -- BackSpace"
+        - "show_letters show_eschars preferences         space        ,-narrow .-narrow Return"
+    symbols:
+        - "~ ` ´ | · √ µ ÷ × ¶"
+        - "© ® £ $ ¥ ^ ° * { }"
+        - "show_numbers   \\ / § π τ [ ] -- BackSpace"
+        - "show_letters show_eschars preferences         space        ,-narrow .-narrow Return"
+    eschars:
+        - "ä-subtle-highlight è é ö-subtle-highlight ü-subtle-highlight-2 Ä-subtle-highlight È É Ö-subtle-highlight Ü-subtle-highlight"
+        - "à â ê î ô À Â Ê Î Ô"
+        - "show_numbers  « » ç Ç æ œ ß-subtle-highlight -- BackSpace"
+        - "show_letters show_eschars preferences         space        „ “ Return"
+
+buttons:
+    Shift_L:
+        action:
+            locking:
+                lock_view: "upper"
+                unlock_view: "base"
+        outline: "change-view"
+        icon: "key-shift"
+    BackSpace:
+        outline: "altline"
+        icon: "edit-clear-symbolic"
+        action: "erase"
+    preferences:
+        action: "show_prefs"
+        outline: "special"
+        icon: "keyboard-mode-symbolic"
+    show_numbers:
+        action:
+            set_view: "numbers"
+        outline: "change-view"
+        label: "123"
+    show_letters:
+        action:
+            set_view: "base"
+        outline: "change-view"
+        label: "ABC"
+    show_symbols:
+        action:
+            set_view: "symbols"
+        outline: "change-view"
+        label: "*/="
+    show_eschars:
+        action:
+            locking:
+                lock_view: "eschars"
+                unlock_view: "base"
+        outline: "change-view"
+        label: "Ää"
+    space:
+        outline: "spaceline"
+        text: " "
+    Return:
+        outline: "altline"
+        icon: "key-enter"
+        keysym: "Return"
+    „:
+        outline: "narrow"
+    “:
+        outline: "narrow"
+    ",-narrow":
+        outline: "narrow"
+        text: ","
+    .-narrow:
+        outline: "narrow"
+        text: "."
+    "!-narrow":
+        outline: "narrow"
+        text: "!"
+    ?-narrow:
+        outline: "narrow"
+        text: "?"
+    --thin:
+        outline: "thin"
+        text: "-"
+    ß-thin:
+        outline: "thin"
+        text: "ß"
+    ä-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "ä"
+    ö-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "ö"
+    ü-subtle-highlight-2:
+        outline: "subtle-highlight-2"
+        text: "ü"
+    Ä-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "Ä"
+    Ö-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "Ö"
+    Ü-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "Ü"
+    ß-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "ß"
+    --:
+        outline: "placeholder"
+        text: ""
+    5:
+        outline: "fill"
+    "&":
+        outline: "fill"
+    ·:
+        outline: "fill"
+    ¥:
+        outline: "fill"
+    ô:
+        outline: "fill"

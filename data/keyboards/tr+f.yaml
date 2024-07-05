@@ -1,0 +1,139 @@
+---
+outlines:
+    default:            { width: 29.44, height: 52 }
+    subtle-highlight:   { width: 29.44, height: 52 }
+    subtle-highlight-2: { width: 58.88, height: 52 }
+    fill:               { width: 58.88, height: 52 }
+    altline:            { width: 58.88, height: 52 }
+    change-view:        { width: 58.88, height: 52 }
+    spaceline:          { width: 88.32, height: 52 }
+    special:            { width: 29.44, height: 52 }
+    placeholder:        { width: 29.44, height: 52 }
+
+views:
+    base:
+        - "f g ğ i o d r n h p q w"
+        - "u i e a ü t k m l y ş x"
+        - "Shift_L   j ö v c ç z s b BackSpace"
+        - "show_numbers show_eschars preferences         space        , . Return"
+    upper:
+        - "F G Ğ I O D R N H P Q W"
+        - "U I E A Ü T K M L Y Ş X"
+        - "Shift_L   J Ö V C Ç Z S B BackSpace"
+        - "show_numbers show_eschars preferences         space        ! ? Return"
+    numbers:
+        - "1 2 3 4 5 6 7 8 9 0"
+        - "@ # ₺ % & - _ + ( )"
+        - "show_symbols   ; \" ' : = < > -- BackSpace"
+        - "show_letters show_eschars preferences         space        , . Return"
+    symbols:
+        - "~ ` € | · √ µ ÷ × ¶"
+        - "© ® £ $ ¥ ^ ° * { }"
+        - "show_numbers   \\ / § π τ [ ] -- BackSpace"
+        - "show_letters show_eschars preferences         space        , . Return"
+    eschars:
+        - "ä æ é ö-subtle-highlight ü-subtle-highlight Ä Æ É Ö-subtle-highlight Ü-subtle-highlight"
+        - "à â ê î ô À Â Ê Î Ô"
+        - "show_numbers  ğ-subtle-highlight ç-subtle-highlight ş-subtle-highlight Ğ-subtle-highlight Ç-subtle-highlight Ş-subtle-highlight ß -- BackSpace"
+        - "show_letters show_eschars preferences         space       û Û  Return"
+
+buttons:
+    Shift_L:
+        action:
+            locking:
+                lock_view: "upper"
+                unlock_view: "base"
+        outline: "change-view"
+        icon: "key-shift"
+    BackSpace:
+        outline: "altline"
+        icon: "edit-clear-symbolic"
+        action: "erase"
+    preferences:
+        action: "show_prefs"
+        outline: "special"
+        icon: "keyboard-mode-symbolic"
+    show_numbers:
+        action:
+            set_view: "numbers"
+        outline: "change-view"
+        label: "123"
+    show_letters:
+        action:
+            set_view: "base"
+        outline: "change-view"
+        label: "ABC"
+    show_symbols:
+        action:
+            set_view: "symbols"
+        outline: "change-view"
+        label: "*/="
+    show_eschars:
+        action:
+            locking:
+                lock_view: "eschars"
+                unlock_view: "base"
+        outline: "change-view"
+        label: "Çğ"
+    space:
+        outline: "spaceline"
+        text: " "
+    Return:
+        outline: "altline"
+        icon: "key-enter"
+        keysym: "Return"
+    ğ-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "ğ"
+    Ğ-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "Ğ"
+    ü-subtle-highlight:
+        outline: "subtle-highlight-2"
+        text: "ü"
+    Ü-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "Ü"
+    ş-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "ş"
+    Ş-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "Ş"
+    ç-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "ç"
+    Ç-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "Ç"
+    ö-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "ö"
+    Ö-subtle-highlight:
+        outline: "subtle-highlight"
+        text: "Ö"
+    --:
+        outline: "placeholder"
+        text: ""
+    5:
+        outline: "fill"
+    "&":
+        outline: "fill"
+    ·:
+        outline: "fill"
+    ¥:
+        outline: "fill"
+    ô:
+        outline: "fill"
+    Ä:
+        outline: "fill"
+    À:
+        outline: "fill"
+    √:
+        outline: "fill"
+    6:
+        outline: "fill"
+    -:
+        outline: "fill"
+    ^:
+        outline: "fill"

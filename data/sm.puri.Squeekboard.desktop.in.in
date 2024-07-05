@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Squeekboard
+GenericName=On Screen Keyboard
+Comment=An on screen virtual keyboard
+Exec=@bindir@/squeekboard
+Icon=input-keyboard-symbolic
+Terminal=false
+Type=Application
+NoDisplay=true
+Categories=GTK;Utility;
+OnlyShowIn=Phosh;
+X-Phosh-UsesFeedback=true
+X-GNOME-Autostart-Phase=Panel
+X-GNOME-Provides=inputmethod
+X-GNOME-Autostart-Notify=true
+X-GNOME-AutoRestart=true

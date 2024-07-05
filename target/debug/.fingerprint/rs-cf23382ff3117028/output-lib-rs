@@ -1,0 +1,2 @@
+error: failed to load argument file: IO error: path@/src/lib.rs: No such file or directory (os error 2)
+

@@ -1,0 +1,8 @@
+---
+# punctuation
+views:
+    base:
+        - "か゚" # 2 codepoints
+outlines:
+    default: { width: 0, height: 0 }
+

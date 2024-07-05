@@ -1,0 +1,90 @@
+# Based on work by: soyer <soyer@irl.hu>
+---
+outlines:
+    default:       { width: 35.67, height: 52 }
+    altline:       { width: 53,    height: 52 }
+    change-view:   { width: 53,    height: 52 }
+    change-view-2: { width: 62,    height: 52 }
+    spaceline:     { width: 53.5,  height: 52 }
+    special:       { width: 35.67, height: 52 }
+    placeholder:   { width: 35.67, height: 52 }
+    placeholder-2: { width: 17.83, height: 52 }
+
+views:
+    base:
+        - "q w e r t z u i o p"
+        - "a s d f g h j k l"
+        - "Shift_L y x c v b n m  BackSpace"
+        - "show_numbers show_eschars preferences         space        , . - Return"
+    upper:
+        - "Q W E R T Z U I O P"
+        - "A S D F G H J K L"
+        - "Shift_L   Y X C V B N M  BackSpace"
+        - "show_numbers show_eschars preferences         space        ? : ! Return"
+    numbers:
+        - "1 2 3 4 5 6 7 8 9 0"
+        - "@ # € % & - _ + ( )"
+        - "show_symbols   ; \" ' : = < >  BackSpace"
+        - "show_letters show_eschars preferences         space        , . - Return"
+    symbols:
+        - "~ ` ´ | · √ µ ÷ × ¶"
+        - "© ® £ $ ¥ ^ ° * { }"
+        - "show_numbers   \\ / § π τ [ ]  BackSpace"
+        - "show_letters show_eschars preferences         space        , . - Return"
+    eschars:
+        - "-- -- ö ü ó Ö Ü Ó -- --"
+        - "-- -- í ő ú Í Ő Ú -- --"
+        - "show_numbers --- é á ű É Á Ű --- BackSpace"
+        - "show_letters show_eschars preferences         space       , „ “ Return"
+
+buttons:
+    Shift_L:
+        action:
+            locking:
+                lock_view: "upper"
+                unlock_view: "base"
+        outline: "change-view"
+        icon: "key-shift"
+    BackSpace:
+        outline: "altline"
+        icon: "edit-clear-symbolic"
+        action: "erase"
+    preferences:
+        action: "show_prefs"
+        outline: "special"
+        icon: "keyboard-mode-symbolic"
+    show_numbers:
+        action:
+            set_view: "numbers"
+        outline: "change-view"
+        label: "123"
+    show_letters:
+        action:
+            set_view: "base"
+        outline: "change-view"
+        label: "ABC"
+    show_symbols:
+        action:
+            set_view: "symbols"
+        outline: "change-view"
+        label: "*/="
+    show_eschars:
+        action:
+            locking:
+                lock_view: "eschars"
+                unlock_view: "base"
+        outline: "change-view"
+        label: "éá"
+    space:
+        outline: "spaceline"
+        text: " "
+    Return:
+        outline: "altline"
+        icon: "key-enter"
+        keysym: "Return"
+    --:
+        outline: "placeholder"
+        text: ""
+    ---:
+        outline: "placeholder-2"
+        text: ""

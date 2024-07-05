@@ -1,0 +1,224 @@
+---
+outlines:
+    default:       { width: 35.33,  height: 45.5 }
+    action:        { width: 59,     height: 45.5 }
+    small:         { width: 50.471, height: 24 }
+    altline:       { width: 52.67,  height: 45.5 }
+    change-view:   { width: 52.67,  height: 45.5 }
+    large:         { width: 52.67,  height: 45.5 }
+    wide:          { width: 59,     height: 45.5 }
+    change-view-2: { width: 59,     height: 45.5 }
+    spaceline:     { width: 100.96, height: 45.5 }
+    special:       { width: 35.33,  height: 45.5 }
+
+views:
+    base:
+        - "TabSmall Ctrl Alt ↑ ↓ ← →"
+        - "a z e r t y u i o p"
+        - "q s d f g h j k l m"
+        - "Shift_L   w x c v b n .   BackSpace"
+        - "show_numbers show_eschars preferences        space         show_actions Return"
+    upper:
+        - "TabSmall Ctrl Alt PageUp PageDown Home End"
+        - "A Z E R T Y U I O P"
+        - "Q S D F G H J K L M"
+        - "Shift_L   W X C V B N ,  BackSpace"
+        - "show_numbers show_eschars preferences        space         show_actions Return"
+    numbers:
+        - "TabSmall Ctrl Alt ↑ ↓ ← →"
+        - "1 2 3 4 5 6 7 8 9 0"
+        - "@ # € % & - _ + ( )"
+        - "show_symbols   , \" ' : ; ! ?  BackSpace"
+        - "show_letters show_eschars preferences        space         show_actions Return"
+    symbols:
+        - "TabSmall Ctrl Alt ↑ ↓ ← →"
+        - "~ ` | · √ π τ ÷ × ¶"
+        - "© ® £ $ ¥ ^ ° * { }"
+        - "show_numbers   \\ / < > = [ ]  BackSpace"
+        - "show_letters show_eschars preferences        space         show_actions Return"
+    eschars:
+        - "TabSmall Ctrl Alt ↑ ↓ ← →"
+        - "à â ç é è ê î ô ù û"
+        - "À Â Ç É È Ê Î Ô Ù Û"
+        - "show_numbers  æ œ ä ë ï ö ü  BackSpace"
+        - "show_letters show_eschars preferences        space         show_actions Return"
+    actions:
+        - "TabSmall Ctrl Alt PageUp PageDown Home End"
+        - "F1  F2  F3  F4  F5  F6"
+        - "F7  F8  F9  F10 F11 F12"
+        - "Esc Tab Pause Insert Up Del"
+        - "show_letters_actions Menu Break Left Down Right"
+
+ 
+buttons:
+    F1:
+        outline: "action"
+        keysym: "F1"
+    F2:
+        outline: "action"
+        keysym: "F2"
+    F3:
+        outline: "action"
+        keysym: "F3"
+    F4:
+        outline: "action"
+        keysym: "F4"
+    F5:
+        outline: "action"
+        keysym: "F5"
+    F6:
+        outline: "action"
+        keysym: "F6"
+    F7:
+        outline: "action"
+        keysym: "F7"
+    F8:
+        outline: "action"
+        keysym: "F8"
+    F9:
+        outline: "action"
+        keysym: "F9"
+    F10:
+        outline: "action"
+        keysym: "F10"
+    F11:
+        outline: "action"
+        keysym: "F11"
+    F12:
+        outline: "action"
+        keysym: "F12"
+    Esc:
+        outline: "action"
+        keysym: "Escape"
+        label: "Echap"
+    Tab:
+        outline: "action"
+        keysym: "Tab"
+    TabSmall:
+        outline: "small"
+        keysym: "Tab"
+        label: "Tab"
+    Del:
+        outline: "action"
+        keysym: "Delete"
+        label: "Suppr"
+    Insert:
+        outline: "action"
+        keysym: "Insert"
+        label: "Inser"
+    Menu:
+        outline: "action"
+        keysym: "Menu"
+    Pause:
+        outline: "action"
+        keysym: "Pause"
+    Break:
+        outline: "action"
+        keysym: "Break"
+        label: "Attn"
+    Home:
+        outline: "small"
+        keysym: "Home"
+        label: "🡔"
+    End:
+        outline: "small"
+        keysym: "End"
+        label: "Fin"
+    PageUp:
+        outline: "small"
+        keysym: "Page_Up"
+        label: "Page ↑"
+    PageDown:
+        outline: "small"
+        keysym: "Page_Down"
+        label: "Page ↓"
+    "↑":
+        outline: "small"
+        keysym: "Up"
+    "↓":
+        outline: "small"
+        keysym: "Down"
+    "←":
+        outline: "small"
+        keysym: "Left"
+    "→":
+        outline: "small"
+        keysym: "Right"
+    Up:
+        label: "↑"
+        outline: "action"
+        keysym: "Up"
+    Left:
+        label: "←"
+        outline: "action"
+        keysym: "Left"
+    Down:
+        label: "↓"
+        outline: "action"
+        keysym: "Down"
+    Right:
+        label: "→"
+        outline: "action"
+        keysym: "Right"
+    Ctrl:
+        modifier: "Control"
+        outline: "small"
+        label: "Ctrl"
+    Alt:
+        modifier: "Alt"
+        outline: "small"
+        label: "Alt"
+    show_actions:
+        action:
+            set_view: "actions"
+        outline: "change-view"
+        label: ">_"
+    Shift_L:
+        action:
+            locking:
+                lock_view: "upper"
+                unlock_view: "base"
+        outline: "change-view"
+        icon: "key-shift"
+    BackSpace:
+        outline: "altline"
+        icon: "edit-clear-symbolic"
+        action: "erase"
+    preferences:
+        action: "show_prefs"
+        outline: "special"
+        icon: "keyboard-mode-symbolic"
+    show_numbers:
+        action:
+            set_view: "numbers"
+        outline: "change-view"
+        label: "123"
+    show_letters:
+        action:
+            set_view: "base"
+        outline: "change-view"
+        label: "ABC"
+    show_letters_actions:
+        action:
+            set_view: "base"
+        outline: "change-view-2"
+        label: "ABC"
+    show_symbols:
+        action:
+            set_view: "symbols"
+        outline: "change-view"
+        label: "*/="
+    show_eschars:
+        action:
+            locking:
+                lock_view: "eschars"
+                unlock_view: "base"
+        outline: "change-view"
+        label: "Ââ"
+    space:
+        outline: "spaceline"
+        text: " "
+    Return:
+        outline: "wide"
+        icon: "key-enter"
+        keysym: "Return"

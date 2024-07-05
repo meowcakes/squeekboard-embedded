@@ -1,0 +1,83 @@
+---
+outlines:
+    default:       { width: 44.75, height: 42 }
+    altline:       { width: 67.25, height: 42 }
+    wide:          { width: 80,    height: 42 }
+    change-view:   { width: 67.25, height: 42 }
+    change-view-2: { width: 80,    height: 42 }
+    spaceline:     { width: 198,   height: 42 }
+    special:       { width: 44.75, height: 42 }
+    placeholder:   { width: 44.75, height: 42 }
+    fill:          { width: 89.5,  height: 42 }
+
+views:
+    base:
+        - "ض ص ث ق ف غ ع ه خ ح ج چ"
+        - "ش س ی ب ل ا ت ن م ک گ /"
+        - "Shift_L ظ ط ز ر ذ د پ و ، BackSpace"
+        - "show_numbers preferences         space     zwnj ؟ . Return"
+    upper:
+        - " ْ  ٌ  ٍ  ً  ُ  ِ  َ  ّ  ] [ @ #"
+        - "ؤ ئ ي إ أ آ ة » « : ؛ \\"
+        - "Shift_L ك  ٓ ژ ٰ  ‌  ٔ  ء  >  <  BackSpace"
+        - "show_numbers preferences         space        ، ؟ ! Return"
+    numbers:
+        - "-- ۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹ ۰ |"
+        - "… ٬ ٫ ﷼ ٪ ^ * ° ) ( − _"
+        - "show_symbols + - × ÷ = / % > <  BackSpace"
+        - "show_letters preferences         space        ، ؟ . Return"
+    symbols:
+        - "-- & ` | · • % π τ ¶ [ ]"
+        - "© ® £ € ¥ ^ * ° { } -- --"
+        - "show_numbers_from_symbols + - × ÷ = \\ % < > BackSpace"
+        - "show_letters preferences         space        ، ! . Return"
+
+buttons:
+    Shift_L:
+        action:
+            locking:
+                lock_view: "upper"
+                unlock_view: "base"
+        outline: "change-view"
+        icon: "key-shift"
+    BackSpace:
+        outline: "altline"
+        icon: "edit-clear-symbolic"
+        action: "erase"
+    preferences:
+        action: "show_prefs"
+        outline: "special"
+        icon: "keyboard-mode-symbolic"
+    show_numbers:
+        action:
+            set_view: "numbers"
+        outline: "change-view-2"
+        label: "۱۲۳"
+    show_numbers_from_symbols:
+        action:
+            set_view: "numbers"
+        outline: "change-view"
+        label: "۱۲۳"
+    show_letters:
+        action:
+            set_view: "base"
+        outline: "change-view-2"
+        label: "ا‌ب‌پ"
+    show_symbols:
+        action:
+            set_view: "symbols"
+        outline: "change-view"
+        label: "*/="
+    space:
+        outline: "spaceline"
+        text: " "
+    Return:
+        outline: "wide"
+        icon: "key-enter"
+        keysym: "Return"
+    zwnj:
+        icon: "zwnj"
+        text: "‌"
+    --:
+        outline: "placeholder"
+        text: ""

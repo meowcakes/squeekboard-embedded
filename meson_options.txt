@@ -1,0 +1,16 @@
+option('depdatadir',
+       type : 'string',
+       value : '',
+       description : 'System data path. Will be searched for definitions instead of datadir when provided')
+
+option('tests',
+       type: 'boolean', value: true,
+       description: 'Whether to compile unit tests')
+
+option('find_orphans',
+       type: 'boolean', value: false,
+       description: 'Check if all present layout files are included in resources.')
+
+option('strict',
+       type: 'boolean', value: true,
+       description: 'Turn more warnings into errors')

@@ -1,0 +1,118 @@
+---
+outlines:
+    default:       { width: 54,  height: 42 }
+    altline:       { width: 81,  height: 42 }
+    large:         { width: 81,  height: 42 }
+    wide:          { width: 100, height: 42 }
+    change-view:   { width: 81,  height: 42 }
+    change-view-2: { width: 100, height: 42 }
+    spaceline:     { width: 206, height: 42 }
+    special:       { width: 54,  height: 42 }
+    placeholder:   { width: 54,  height: 42 }
+
+views:
+    base:
+        - "q w e r t y u i o p"
+        - "a s d f g h j k l"
+        - "Shift_L   z x c v b n m  BackSpace"
+        - "show_numbers preferences         space        show_accents Return"
+    upper:
+        - "Q W E R T Y U I O P"
+        - "A S D F G H J K L"
+        - "Shift_L   Z X C V B N M  BackSpace"
+        - "show_numbers preferences         space        show_upper_accents Return"
+    numbers:
+        - "1 2 3 4 5 6 7 8 9 0"
+        - "@ # $ % & - _ + ( )"
+        - "show_symbols   , \" ' : ; ! ?  BackSpace"
+        - "show_letters preferences         space        .-large Return"
+    symbols:
+        - "~ ` | · √ π τ ÷ × ¶"
+        - "© ® £ € ¥ ^ ° * { }"
+        - "show_numbers_from_symbols   \\ / < > = [ ]  BackSpace"
+        - "show_letters preferences         space        .-large Return"
+    accents:
+        - "q w ę r t y u i ó p"
+        - "ą ś d f g h j k ł"
+        - "accents_show_upper   ż ź ć v b ń m  BackSpace"
+        - "show_numbers preferences         space        show_accents Return"
+    upper_accents:
+        - "Q W Ę R T Y U I Ó P"
+        - "Ą Ś D F G H J K Ł"
+        - "accents_show_upper   Ż Ź Ć V B Ń M  BackSpace"
+        - "show_numbers preferences         space        show_upper_accents Return"
+
+buttons:
+    Shift_L:
+        action:
+            locking:
+                lock_view: "upper"
+                unlock_view: "base"
+        outline: "change-view"
+        icon: "key-shift"
+    accents_show_upper:
+        action:
+            locking:
+                lock_view: "upper_accents"
+                unlock_view: "accents"
+                looks_locked_from:
+                    - "upper"
+        outline: "change-view"
+        icon: "key-shift"
+    BackSpace:
+        outline: "altline"
+        icon: "edit-clear-symbolic"
+        keysym: "BackSpace"
+    preferences:
+        action: "show_prefs"
+        outline: "special"
+        icon: "keyboard-mode-symbolic"
+    show_numbers:
+        action:
+            set_view: "numbers"
+        outline: "change-view-2"
+        label: "123"
+    show_numbers_from_symbols:
+        action:
+            set_view: "numbers"
+        outline: "change-view"
+        label: "123"
+    show_letters:
+        action:
+            set_view: "base"
+        outline: "change-view-2"
+        label: "ABC"
+    show_symbols:
+        action:
+            set_view: "symbols"
+        outline: "change-view"
+        label: "*/="
+    show_accents:
+        action:
+            locking:
+                lock_view: "accents"
+                unlock_view: "base"
+        outline: "change-view"
+        label: "ąę"
+    show_upper_accents:
+        action:
+            locking:
+                lock_view: "upper_accents"
+                unlock_view: "upper"
+                looks_locked_from:
+                    - "accents"
+        outline: "change-view"
+        label: "ĄĘ"
+    .-large:
+        outline: "large"
+        text: "."
+    space:
+        outline: "spaceline"
+        text: " "
+    Return:
+        outline: "wide"
+        icon: "key-enter"
+        keysym: "Return"
+    --:
+        outline: "placeholder"
+        text: ""

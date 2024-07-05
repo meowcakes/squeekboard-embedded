@@ -1,0 +1,60 @@
+---
+outlines:
+    default:          { width: 41,  height: 60 }
+    altline:          { width: 41,  height: 60 }
+    wide:             { width: 82,  height: 60 }
+    change-view:      { width: 82,  height: 60 }
+    spaceline:        { width: 122, height: 60 }
+    special:          { width: 41,  height: 60 }
+
+views:
+    base:
+        - "' - ק  ר א ט ו ן ם פ"
+        - "ש ד ג כ ע י ח ל ך ף"
+        - "ז ס ב ה נ מ צ ת ץ  BackSpace"
+        - "show_numbers preferences    ,     space        . Return"
+    numbers:
+        - "1 2 3 4 5 6 7 8 9 0"
+        - "@ # ₪ % & - _ + ( )"
+        - "show_symbols   , \" ' : ; ! ?  BackSpace"
+        - "show_letters preferences    ,     space        . Return"
+    symbols:
+        - "~ ` | · √ π τ ÷ × ¶"
+        - "© ® £ € $ ^ ° * { }"
+        - "show_numbers   \\ / < > = [ ]  BackSpace"
+        - "show_letters preferences    ,     space        . Return"
+
+buttons:
+    BackSpace:
+        outline: "altline"
+        icon: "edit-clear-symbolic"
+        action: "erase"
+    preferences:
+        action: "show_prefs"
+        outline: "special"
+        icon: "keyboard-mode-symbolic"
+    show_numbers:
+        action:
+            set_view: "numbers"
+        outline: "change-view"
+        label: "123"
+    show_letters:
+        action:
+            set_view: "base"
+        outline: "change-view"
+        label: "ABC"
+    show_symbols:
+        action:
+            set_view: "symbols"
+        outline: "change-view"
+        label: "*/="
+    space:
+        outline: "spaceline"
+        text: " "
+    Return:
+        outline: "wide"
+        icon: "key-enter"
+        keysym: "Return"
+    --:
+        outline: "placeholder"
+        text: ""

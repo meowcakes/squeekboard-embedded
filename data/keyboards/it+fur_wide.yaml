@@ -1,0 +1,88 @@
+# Based on the Friulian layout created by Fabio Tomat
+# 14 october 2020
+---
+outlines:
+    default:       { width: 53.5,  height: 42 }
+    altline:       { width: 80.25, height: 42 }
+    wide:          { width: 91.26, height: 42 }
+    change-view:   { width: 80.25, height: 42 }
+    change-view-2: { width: 91.26, height: 42 }
+    spaceline:     { width: 134,   height: 42 }
+    special:       { width: 53.5,  height: 42 }
+    placeholder:   { width: 53.5,  height: 42 }
+
+views:
+    base:
+        - "q w e r t y u i o p"
+        - "a s d f g h j k l"
+        - "Shift_L   z x c v b n m  BackSpace"
+        - "show_numbers show_eschars preferences         space        , . Return"
+    upper:
+        - "Q W E R T Y U I O P"
+        - "A S D F G H J K L"
+        - "Shift_L   Z X C V B N M  BackSpace"
+        - "show_numbers show_eschars preferences         space        “ ” Return"
+    numbers:
+        - "1 2 3 4 5 6 7 8 9 0"
+        - "@ # € % & - _ + ( )"
+        - "show_symbols   , \" ' : ; ! =  BackSpace"
+        - "show_letters show_eschars preferences         space        ? . Return"
+    symbols:
+        - "~ ` | · √ π τ ÷ × ¶"
+        - "© ® £ $ ¥ ^ ° * { }"
+        - "show_numbers   \\ / < > = [ ]  BackSpace"
+        - "show_letters show_eschars preferences         space        ? . Return"
+    eschars:
+        - "â ê î ô û Â Ê Î Ô Û"
+        - "à è ì ò ù À È Ì Ò Ù"
+        - "show_numbers   ç Ç ᶜ ᵐ ⁿ ᵉ ᵗ  BackSpace"
+        - "show_letters show_eschars preferences         space        ᶠ . Return"
+
+buttons:
+    Shift_L:
+        action:
+            locking:
+                lock_view: "upper"
+                unlock_view: "base"
+        outline: "change-view"
+        icon: "key-shift"
+    BackSpace:
+        outline: "altline"
+        icon: "edit-clear-symbolic"
+        action: "erase"
+    preferences:
+        action: "show_prefs"
+        outline: "special"
+        icon: "keyboard-mode-symbolic"
+    show_numbers:
+        action:
+            set_view: "numbers"
+        outline: "change-view"
+        label: "123"
+    show_letters:
+        action:
+            set_view: "base"
+        outline: "change-view"
+        label: "ABC"
+    show_symbols:
+        action:
+            set_view: "symbols"
+        outline: "change-view"
+        label: "*/="
+    show_eschars:
+        action:
+            locking:
+                lock_view: "eschars"
+                unlock_view: "base"
+        outline: "change-view"
+        label: "àê"
+    space:
+        outline: "spaceline"
+        text: " "
+    Return:
+        outline: "altline"
+        icon: "key-enter"
+        keysym: "Return"
+    --:
+        outline: "placeholder"
+        text: ""

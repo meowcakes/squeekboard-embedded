@@ -1,0 +1,89 @@
+# Maintained by: Khaled Eldoheiri <khalid@kdehairy.com>
+---
+outlines:
+    default:       { width: 32.95,  height: 52 }
+    altline:       { width: 48.99,  height: 52 }
+    wide:          { width: 62,     height: 52 }
+    change-view:   { width: 48.99,  height: 52 }
+    change-view-2: { width: 62,     height: 52 }
+    spaceline:     { width: 169.63, height: 52 }
+    special:       { width: 35.66,  height: 52 }
+    fill:          { width: 65.32,  height: 52 }
+
+views:
+    base:
+        - "ذ ض ص ث ق ف غ ع خ ح ج"
+        - "ش س ي ب ل ا ت ن م ك ط"
+        - "Shift_L ء ؤ ر ة و ز ظ د BackSpace"
+        - "show_numbers preferences         space        . Return"
+    extra:
+        - "ذ ض ص ث ق لإ إ ع خ ح ج"
+        - "ش س ى ب لأ أ ت ن م ك ط"
+        - "Shift_L ئ لآ لا ه آ ز ظ د BackSpace"
+        - "show_numbers preferences         space        . Return"
+    numbers:
+        - "1 2 3 4 5 6 7 8 9 0"
+        - "@ # € % & - _ + ( )"
+        - "show_symbols   ، \" ' : ؛ ! ؟  BackSpace"
+        - "show_letters preferences         space        . Return"
+    symbols:
+        - "~ ` | · √ π τ ÷ × ¶"
+        - "© ® £ € ¥ ^ ° * { }"
+        - "show_numbers_from_symbols   \\ / < > = [ ]  BackSpace"
+        - "show_letters preferences         space        . Return"
+
+buttons:
+    Shift_L:
+        action:
+            locking:
+                lock_view: "extra"
+                unlock_view: "base"
+        outline: "change-view"
+        icon: "key-shift"
+    BackSpace:
+        outline: "altline"
+        icon: "edit-clear-symbolic"
+        action: "erase"
+    preferences:
+        action: "show_prefs"
+        outline: "special"
+        icon: "keyboard-mode-symbolic"
+    show_numbers:
+        action:
+            set_view: "numbers"
+        outline: "change-view-2"
+        label: "123"
+    show_numbers_from_symbols:
+        action:
+            set_view: "numbers"
+        outline: "change-view"
+        label: "123"
+    show_letters:
+        action:
+            set_view: "base"
+        outline: "change-view-2"
+        label: "ض"
+    show_symbols:
+        action:
+            set_view: "symbols"
+        outline: "change-view"
+        label: "*/="
+    space:
+        outline: "spaceline"
+        text: " "
+    Return:
+        outline: "wide"
+        icon: "key-enter"
+        keysym: "Return"
+    5:
+        outline: "fill"
+    "&":
+        outline: "fill"
+    ":":
+        outline: "fill"
+    √:
+        outline: "fill"
+    ¥:
+        outline: "fill"
+    ">":
+        outline: "fill"

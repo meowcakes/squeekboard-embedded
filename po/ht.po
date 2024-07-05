@@ -1,0 +1,45 @@
+# Squeekboard Haitian Creole Translation
+# Copyright (C) 2024 Purism
+# This file is distributed under the same license as the squeekboard package.
+# Pierre Michel Augustin <pierremichelaugustin@gnuhealth.org>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Phosh/squeekboard/"
+"issues\n"
+"POT-Creation-Date: 2024-01-11 05:05+0000\n"
+"PO-Revision-Date: 2024-01-11 10:40-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ht\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. translators: This is a emmoji keyboard layout
+#: data/popover.ui:6
+msgid "Emoji"
+msgstr "Emoji"
+
+#. translators: This is a terminal keyboard layout
+#: data/popover.ui:12
+msgid "Terminal"
+msgstr "Tèminal"
+
+#: data/popover.ui:18
+msgid "Keyboard Settings"
+msgstr "Paramèt Klavye yo"
+
+#: data/sm.puri.Squeekboard.desktop.in.in:3
+msgid "Squeekboard"
+msgstr "Squeekboard"
+
+#: data/sm.puri.Squeekboard.desktop.in.in:4
+msgid "On Screen Keyboard"
+msgstr "Sou Ekran Klavye"
+
+#: data/sm.puri.Squeekboard.desktop.in.in:5
+msgid "An on screen virtual keyboard"
+msgstr "Sou yon ekran klavye vityèl"

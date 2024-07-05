@@ -1,0 +1,94 @@
+# Maintained by: Jordy Bossy <jordi@bossy.space>
+# and Patrick Jörg <patrickjoerg@gmx.ch>. No Copyright, enjoy!
+
+---
+outlines:
+    default:       { width: 35.33,  height: 58 }
+    doublewidth:   { width: 70.66,  height: 58 }
+    altline:       { width: 52.8,   height: 58 }
+    wide:          { width: 64.9,   height: 58 }
+    change-view:   { width: 52.8,   height: 58 }
+    change-view-2: { width: 64.9,   height: 58 }
+    spaceline:     { width: 111.75, height: 58 }
+    special:       { width: 35.33,  height: 58 }
+
+views:
+    base:
+        - "q w e r t z u i o p ü"
+        - "a s d f g h j k l ö ä"
+        - "Shift_L   y x c v b n m ' BackSpace"
+        - "show_numbers show_eschars preferences       Space    , .    Return"
+    upper:
+        - "Q W E R T Z U I O P Ü"
+        - "A S D F G H J K L Ö Ä"
+        - "Shift_L   Y X C V B N M \" BackSpace"
+        - "show_numbers show_eschars preferences       Space    , .    Return"
+    numbers:      
+        - "1 2 3 4 5 6 7 8 9 0 ^"
+        - "* + - = ( ) ~ < > ! ?"
+        - "show_symbols _ # & / \\ √ ; : BackSpace"
+        - "show_letters show_eschars preferences       Space    , .    Return"
+    symbols:
+        - "€ $ £ ¥ % | § µ [ ]"
+        - "© ® § ` { } @ · ¡ ¿"
+        - "show_numbers  « » ÷ × “ ” „ BackSpace"
+        - "show_letters show_eschars preferences       Space    , .    Return"
+    eschars:
+        - "à â ç é è ê î ô ù û ñ"
+        - "À Â Ç É È Ê Î Ô Ù Û Ñ"
+        - "show_numbers  æ œ ä ë ï ö ü ß BackSpace"
+        - "show_letters show_eschars preferences       Space     °     Return"
+
+buttons:
+    Shift_L:
+        action:
+            locking:
+                lock_view: "upper"
+                unlock_view: "base"
+        outline: "change-view"
+        icon: "key-shift"
+    BackSpace:
+        outline: "altline"
+        icon: "edit-clear-symbolic"
+        action: "erase"
+    preferences:
+        action: "show_prefs"
+        outline: "special"
+        icon: "keyboard-mode-symbolic"
+    show_numbers:
+        action:
+            set_view: "numbers"
+        outline: "change-view"
+        label: "123"
+    show_letters:
+        action:
+            set_view: "base"
+        outline: "change-view"
+        label: "ABC"
+    show_symbols:
+        action:
+            set_view: "symbols"
+        outline: "change-view"
+        label: "*/="
+    show_eschars:
+        action:
+            locking:
+                lock_view: "eschars"
+                unlock_view: "base"
+        outline: "change-view"
+        label: "Ââ"
+    Space:
+        outline: "spaceline"
+        text: " "
+    Return:
+        outline: "wide"
+        icon: "key-enter"
+        keysym: "Return"
+    °:
+        outline: "doublewidth"
+    "|":
+        outline: "doublewidth"
+    "}":
+        outline: "doublewidth"
+    ×:
+        outline: "doublewidth"
